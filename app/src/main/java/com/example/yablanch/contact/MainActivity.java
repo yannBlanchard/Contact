@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       file = new File(getFilesDir(),"save");
+
 
 
     }
@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     public void OnClick(View v){
         String contact = "";
         String key;
+        file = new File(getFilesDir(),"save");
         switch(v.getId()){
             case R.id.btnSave :
                 EditText etName=(EditText)findViewById(R.id.fieldName);
